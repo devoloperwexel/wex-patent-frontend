@@ -1,6 +1,8 @@
 import Layout from "@/components/layout/layout";
 import Home from "modules/home/Home";
 
+export const dynamic = 'force-dynamic';
+
 export default function page() {
   const now = new Date().toISOString();
   console.log(
