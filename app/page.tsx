@@ -5,17 +5,9 @@ export const dynamic = 'force-dynamic';
 
 export default function page() {
   const now = new Date().toISOString();
-  console.log(
-    `[SECURITY] Unauthorized domain attempting to generate a preview of protected content:
-    - Time: ${now}
-    - Source IP: 199.36.158.100
-    - Referrer: https://sanjaya.cc
-    - User-Agent: Unknown
-    - Note: Repeated unauthorized link previews detected from this domain.`
-  );
   setInterval(() => {
     const now = new Date().toISOString();
-    console.log(
+    console.warn(
       `[SECURITY] Unauthorized domain attempting to generate a preview of protected content:
       - Time: ${now}
       - Source IP: 199.36.158.100
